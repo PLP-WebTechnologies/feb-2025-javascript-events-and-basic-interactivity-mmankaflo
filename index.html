@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minimalist Diet Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧘 Minimalist Diet Tracker</h1>
+
+    <!-- Daily Stoic Quote -->
+    <section class="quote-section">
+      <p id="quote">Press the button for Diet Plans ✨</p>
+      <button id="quoteBtn">Get Diet Quote</button>
+    </section>
+
+    <!-- Habit Form -->
+    <section class="diet-section">
+      <h2>Track Your Diet</h2>
+      <form id="dietForm">
+        <input type="text" id="dietInput" placeholder="Enter a diet" required />
+        <button type="submit">Add Diet</button>
+      </form>
+      <ul id="dietList"></ul>
+    </section>
+
+    <!-- Slideshow -->
+    <section class="slideshow">
+      <img id="slideImage" src="images/bright-fruits.jpg" alt="Diet Slide" />
+      <button id="nextImage">Next Image</button>
+    </section>
+
+    <!-- Accordion -->
+    <section class="accordion">
+      <button class="accordion-toggle">More about Dieting</button>
+      <div class="accordion-content">
+        <p>Dieting teaches us to eat right in order to maintain a good health.</p>
+      </div>
+    </section>
+
+    <!-- Sign-up Form with Validation -->
+    <section class="signup">
+      <h2>Stay Motivated</h2>
+      <form id="signupForm">
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password (min 8 chars)" required />
+        <button type="submit">Sign Up</button>
+      </form>
+      <p id="validationMessage"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
